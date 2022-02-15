@@ -24,6 +24,10 @@
         .tablero{
             background-color: aqua;
         }
+
+        .tablero:hover{
+            background-color: rgb(168, 164, 164);
+        }
     </style>
 </head>
 <body>
@@ -34,6 +38,24 @@
     </form>
 
     <div id="tablero"></div>
+
+    <div id="crearBarco">
+        <form action="">
+            <div>
+                <label for="">Tamaño del Barco: </label>
+                <input type="number" id="tamallo" min="1" max="4" value="1">
+            </div>
+            <div>
+                <label for="">Dirrecion del Barco: </label>
+                <div>
+                    <label for="">Vertical: </label>
+                    <input type="radio" name="direccion" id="dirrecion">
+                    <label for="">Horizontal: </label>
+                    <input type="radio" name="direccion" id="dirrecion">
+                </div> 
+            </div>
+        </form>
+    </div>
     <script src="./scripts/app.js"></script>
 </body>
 </html>
