@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hundir la Flota</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        .vacio{
+            border: none;
+        }
+
+        .tablero{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="tam">tamaño del tablero </label>
+        <input type="number" name="" id="tam" min="4" max="10" value="4">
+        <input type="button" value="Enviar" id="enviar">
+    </form>
+
+    <div id="tablero"></div>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
