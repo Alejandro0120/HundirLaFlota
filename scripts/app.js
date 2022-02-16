@@ -81,11 +81,13 @@ class Barco {
     }
 }
 
-
-
-
 function contacto(e){
-    console.log(document.querySelector('#direcion').value);
+    if(document.getElementById('vertical').checked){
+        console.log(document.getElementById('vertical').value);
+    }    
+    if(document.getElementById('horizontal').checked){
+        console.log(document.getElementById('horizontal').value);
+    }
 }
 
 function disparar(e){
@@ -126,7 +128,7 @@ function crearFormularioBarco(){
     let inputRadio1=document.createElement('input');
     inputRadio1.type = 'radio';
     inputRadio1.name = 'direccion';
-    inputRadio1.id = 'direcion';
+    inputRadio1.id = 'vertical';
     inputRadio1.value = 'vertical'
 
     let label4 = document.createElement('label');
@@ -134,8 +136,8 @@ function crearFormularioBarco(){
     let inputRadio2=document.createElement('input');
     inputRadio2.type = 'radio';
     inputRadio2.name = 'direccion';
-    inputRadio2.id = 'direcion';
     inputRadio2.id = 'horizontal';
+    inputRadio2.value = 'horizontal';
 
     let inputButton = document.createElement('input');
     inputButton.type = 'button';
@@ -149,10 +151,7 @@ function crearFormularioBarco(){
     form.append(div1,div2, inputButton);
     fragmentBarco.append(h2,form);
     crearBarco.appendChild(fragmentBarco);
-
-
     creacion.addEventListener('click',contacto);
-
 }
 
 
@@ -167,5 +166,4 @@ document.querySelector('#enviar').addEventListener('click',()=>{
     
     hundirFlota.c
     */
-
 });
