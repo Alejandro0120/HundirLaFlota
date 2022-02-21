@@ -10,8 +10,8 @@
             border-collapse: collapse;
         }
         td{
-            width: 100px;
-            height: 100px;
+            width: 50px;
+            height: 50px;
             border: 1px solid black;
             text-align: center;
             font-size: 3em;
@@ -28,21 +28,23 @@
         .tablero:hover{
             background-color: rgb(168, 164, 164);
         }
+
+        .barco{
+            margin: 5px;
+            background-color: grey;
+        }
     </style>
 </head>
 <body>
     <form action="">
-        <label for="tam">tamaño del tablero </label>
+        <label for="tam">Tamaño del tablero </label>
         <input type="number" name="" id="tam" min="4" max="10" value="4">
         <input type="button" value="Enviar" id="enviar">
     </form>
     <div id="crearBarco"></div>
 
     <div id="tablero"></div>
-
     
-    <script src="./scripts/app.js">
-    
-    </script>
+    <script src="./scripts/app.js"></script>
 </body>
 </html>
